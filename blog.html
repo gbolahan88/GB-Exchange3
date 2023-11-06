@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Blogs | GB-Exchange</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <script src="https://kit.fontawesome.com/3107d08b31.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="GB LOGO BLUE.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+  </head>
+
+  <body>
+    <nav>
+      <img class="logo" src="img/GB LOGO.png" >
+         
+      <div>
+        <ul>
+          <div class=" cancel-btn">
+            <i class="fa-solid fa-times"></i>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="rate.html">Rates</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul> 
+        <div class="icon menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      
+      <!--<div class="search">
+          <input class="srch" type="search" name="" placeholder="Type to search">
+          <a href="#"><button class="btn2">Search</button></a>
+        </div>-->      
+    </nav>
+
+    <section>
+      <div class="content2">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Coming Soon!!!</h1>
+      </div>
+    </section>
+    <script>
+      const menu = document.querySelector("ul");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = ()=>{
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+      }
+      cancelBtn.onclick = ()=>{
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+      }
+    </script>
+    <footer> 
+      <h2>&copy; 2023 GB Exchange.All Rights Reserved.</h2>
+    </footer>    
+  </body>
+
+</html>
